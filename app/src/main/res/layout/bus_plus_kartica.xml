@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:text="Moja kartica nepersonalizovana"
+                android:id="@+id/cardName"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="qwertyuiop1234567890"
+                android:id="@+id/cardSerial"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:enabled="true"
+                android:textSize="@dimen/serial_number_size" />
+
+            <TextView
+                android:layout_width="75sp"
+                android:layout_height="fill_parent"
+                android:text="2700,00"
+                android:id="@+id/cardAmmount"
+                android:gravity="center_vertical|right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/action1Button"
+            android:src="@drawable/icon"
+            android:longClickable="false" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/action2Button"
+            android:src="@drawable/icon" />
+    </LinearLayout>
+</LinearLayout>
